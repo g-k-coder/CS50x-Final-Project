@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block body %}
+   class='index-body mt-0' style='background-image: linear-gradient(to right top, #c9ff85, #ffd551, #ff9f65, #ff6aa7, #ff69f7);'
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post" class='container text-center align-items-center mt-0'>
+        <div class="mb-5">
+            <input required onkeydown="return /[a-z]/i.test(event.key)"  autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-5">
+            <input required class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit" id='submit'>Log In</button>
+    </form>
+{% endblock %}

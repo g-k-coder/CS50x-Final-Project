@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block main %}
+    <form action="/alter-edit" method="post" class="form-inline mt-auto">
+        <input autocomplete="off" autofocus class="form-control mr-2" type="text" name='task' id='task' required placeholder="Task" value="{{ task }}">
+        <button class="btn btn-info" type="submit" id="button">Edit</button>
+    </form>    
+{% endblock %}

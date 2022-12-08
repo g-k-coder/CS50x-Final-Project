@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+/* Nav bar */
+nav
+{
+    border: none;
+    width: 100%;
+}
+nav .navbar-brand
+{
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 0.2em;
+}
+.black
+{
+    color: black;
+}
+.blue
+{
+    color: rgb(0, 132, 255);
+}
+a
+{
+    text-decoration: none;
+    color: black!important;
+}
+.nav-link 
+{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+}
+footer
+{
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+}
+
+/* index.html */
+#index-body
+{
+    background-color: white;
+    background-size: 100% auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.jumbotron 
+{
+    background-color: rgba(100, 100, 100, 0.507);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    font-size: 1.25em;
+}
+
+
+/* Registration instructions, register.html and login.html */
+form
+{
+    width: fit-content;
+    font-size: .5rem;
+    color: white;
+}
+
+a.button
+{
+    color: white!important;
+    text-decoration: underline;
+}
+
+/* Password change */
+.pswd-change
+{
+    margin: auto;    
+}
+
+#task 
+{
+    border: 2px solid black;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+table
+{
+    width: 50%;
+}
+
+.options
+{
+    width: fit-content;
+}

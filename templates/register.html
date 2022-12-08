@@ -1,0 +1,32 @@
+{% extends "layout.html" %} 
+
+{% block title %} Register {% endblock %} 
+
+{% block body %} 
+  class='index-body mt-0' style='background-image: linear-gradient(to right top, #8cfcb2, #a0c070, #96884d, #77573a, #49302a, #4c302b, #4e302c, #51302e, #8a5541, #be834d, #e4ba5a, #f9f871);' 
+{% endblock %} 
+
+{% block main %}
+    <div id="register" class="ml-auto mr-auto">
+      <form action="/register" method="post" class="container text-center align-items-center mt-0 mb-4">
+        <div class="mb-5 form-group has-danger">
+          <input required onkeydown="return /[a-z]/i.test(event.key)" onchange="checkUsername()" autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text"/>
+          <p class="fw-light fs-6 mb-0">Alphanumeric characters only</p>
+        </div>
+        <div class="mb-5">
+          <i class='bx bxs-key'></i>
+          <input required class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password"/>
+          <i class='bx bxs-key'></i>
+          <input required class="form-control mx-auto w-auto mt-4" id="confirm_pass" name="confirmation" placeholder="Confirm password" type="password"/>
+          <p class="fw-light fs-6 mt-0">Passwords must match</p>
+        </div>
+        <button class="btn btn-primary" type="submit" id="submit">Register</button>
+      </form>
+
+      <form action="/login" class="ml-auto mr-auto">
+        <div class="container text-center">
+          <p class="fw-light fs-6 mt-0">Already a user? <a href="/login" type="submit" class="button"> Login</a></p>
+        </div>
+      </form>
+    </div>
+{% endblock %}

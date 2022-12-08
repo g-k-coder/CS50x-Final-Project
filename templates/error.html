@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block main %}
+    <div class='container align-items-center'>
+        <!-- https://github.com/jacebrowning/memegen -->
+        <img alt="{{ top }}" class="border img-fluid" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Green_Wormhole.png/1920px-Green_Wormhole.png&width=850" title="{{ top }}">
+    </div>
+{% endblock %}

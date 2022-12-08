@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    ToDo
+{% endblock %}
+
+{% block main %}
+    <form action="/todo" method="post" class="form-inline mr-auto mb-4 w-auto ml-auto mt-0">
+        <input autocomplete="off" autofocus class="form-control mr-2" type="text" name='task' id='task' required placeholder="Task">
+        <button class="btn btn-info" type="submit" id="button">Add</button>
+    </form>    
+
+    <table class="table table-dark table-hover" style="width: 40%;">
+        <thead>
+                Tasks
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+                <form method='post'>
+                    <tr>
+                        <td class='text-start align'>
+                            <input type='hidden' name='task' value="{{ task }}">
+                            {{ task }}
+                        </td>
+                        <td class='options text-end'>
+                            <button type='submit' formaction='/edit' class='btn btn-outline-success'>Edit</button>
+                            <button type='submit' formaction='/delete' class='btn btn-outline-success'>Done</button>
+                        </td>
+                    </tr>
+                </form>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
