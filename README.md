@@ -173,7 +173,7 @@ $ flask run
     - [password_change.html](project/templates/password_change.html) - allows the users to change their password
     - [register.html](project/templates/register.html) - page containing username field, and two password fields, so that users can confirm their password
     - [todo.html](project/templates/todo.html) - the web page where most of the web application functionalities happen, e.g. add to the list, remove from it, edit the items on the list
-- [app.py](project/app.py) - Python code making all of the functionalities to happen
+- [app.py](project/app.py) - Python code making all of the functionalities happen
 - [done.db](project/done.db) - Relational database containing tables of users, and their To-Do lists
 - [helpers.py](project/helper.py) - Ensures that user is logged in and checks for errors
 - [requirements.txt](project/requirements.txt) - Text file containing the list of all Python libraries and modules imported in the Python code
